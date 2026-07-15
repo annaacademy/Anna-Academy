@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Academy - Belajar Islam Dengan Ceria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: { 500: '#10B981', 600: '#059669' },
+                        gold: { 500: '#D4AF37' },
+                        sky: { 500: '#38BDF8' },
+                        beige: { 50: '#FDFBF7' }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-beige-50 font-sans text-gray-800">
+
+    <nav class="sticky top-0 bg-white/80 backdrop-blur-md border-b border-gray-200 p-4 flex justify-between items-center z-50">
+        <div class="flex items-center gap-2">
+            <div class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold">A</div>
+            <h1 class="text-xl font-bold text-emerald-600">Anna Academy</h1>
+        </div>
+        <div class="flex gap-4">
+            <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full font-semibold">🔥 12 Hari</span>
+            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-semibold">💎 150 Coins</span>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto p-6">
+        <header class="bg-gradient-to-r from-emerald-500 to-sky-500 rounded-3xl p-8 text-white mb-8 shadow-lg">
+            <h2 class="text-3xl font-bold mb-2">Selamat Datang, Ahmad! 👋</h2>
+            <p class="opacity-90">Jom sambung belajar Jawi hari ini.</p>
+            <button class="mt-6 bg-white text-emerald-600 px-6 py-3 rounded-2xl font-bold hover:scale-105 transition">Teruskan Pembelajaran</button>
+        </header>
+
+        <section class="grid grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 hover:border-emerald-300 transition cursor-pointer text-center">
+                <div class="text-4xl mb-4">📖</div>
+                <h3 class="font-bold text-lg">Jawi</h3>
+                <p class="text-sm text-gray-500">Tahun 1</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 hover:border-emerald-300 transition cursor-pointer text-center">
+                <div class="text-4xl mb-4">✨</div>
+                <h3 class="font-bold text-lg">Iqra'</h3>
+                <p class="text-sm text-gray-500">Iqra' 1</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 hover:border-emerald-300 transition cursor-pointer text-center">
+                <div class="text-4xl mb-4">🕌</div>
+                <h3 class="font-bold text-lg">Solat</h3>
+                <p class="text-sm text-gray-500">Wuduk</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="fixed bottom-0 w-full bg-white border-t border-gray-200 p-4 flex justify-around">
+        <button class="text-emerald-600 font-bold">🏠 Home</button>
+        <button class="text-gray-400">📚 Learn</button>
+        <button class="text-gray-400">🎮 Games</button>
+        <button class="text-gray-400">👤 Profile</button>
+    </footer>
+
+</body>
+</html>
